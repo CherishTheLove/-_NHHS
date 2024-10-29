@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가격 비교 결과</title>
+</head>
+<body>
+    <h2>{{ item }} 가격 비교</h2>
+    <table border="1">
+        <tr>
+            <th>구분</th>
+            <th>가격 (원)</th>
+        </tr>
+        <tr>
+            <td>교내 매점</td>
+            <td>{{ internal_price }}</td>
+        </tr>
+        <tr>
+            <td>외부 상점</td>
+            <td>{{ external_price }}</td>
+        </tr>
+        <tr>
+            <td>가격 차이</td>
+            <td>{{ difference }}</td>
+        </tr>
+    </table>
+</body>
+</html>
